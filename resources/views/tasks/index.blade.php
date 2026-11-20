@@ -352,7 +352,12 @@
                     <div class="task-item">
                         <div class="d-flex flex-wrap justify-content-between gap-2">
                             <div class="flex-grow-1">
-                                <h6 class="fw-bold mb-1">{{ $task->title }}</h6>
+                                <h6 class="fw-bold mb-1">
+    <a href="{{ route('tasks.show', $task) }}"
+       class="text-decoration-none text-dark">
+        {{ $task->title }}
+    </a>
+</h6>
 
                                 @if($task->description)
                                     <p class="muted small mb-2">{{ $task->description }}</p>
