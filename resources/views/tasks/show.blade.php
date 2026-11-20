@@ -198,6 +198,20 @@
             </div>
         </div>
 
+        @if($task->google_drive_url)
+    <div class="mt-4">
+        <div class="detail-label mb-2">Documento de Google Drive</div>
+
+        <a href="{{ $task->google_drive_url }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-outline-primary">
+            <i class="bi bi-cloud-arrow-up me-1"></i>
+            Abrir documento
+        </a>
+    </div>
+@endif
+
         <hr>
 
         <div class="d-flex flex-wrap gap-2">

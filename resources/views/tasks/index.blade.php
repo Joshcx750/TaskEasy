@@ -300,6 +300,16 @@
                                value="{{ old('due_date') }}">
                     </div>
 
+                    <div class="mb-4">
+    <label class="form-label fw-semibold">Documento de Google Drive</label>
+    <input type="url" name="google_drive_url" class="form-control"
+           value="{{ old('google_drive_url') }}"
+           placeholder="https://drive.google.com/...">
+    <small class="text-muted">
+        Opcional. Pega el enlace del documento que quieras asociar.
+    </small>
+</div>
+
                     <button type="submit" class="btn btn-primary w-100 py-2">
                         <i class="bi bi-plus-lg me-1"></i> Agregar tarea
                     </button>

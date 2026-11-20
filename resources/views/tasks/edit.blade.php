@@ -203,6 +203,20 @@
                 >
             </div>
 
+            <div class="mb-4">
+    <label class="form-label fw-semibold">Documento de Google Drive</label>
+    <input
+        type="url"
+        name="google_drive_url"
+        class="form-control"
+        value="{{ old('google_drive_url', $task->google_drive_url) }}"
+        placeholder="https://drive.google.com/..."
+    >
+    <small class="text-muted">
+        Opcional. Puedes modificar o borrar el enlace.
+    </small>
+</div>
+
             <div class="d-flex flex-wrap gap-2">
                 <button type="submit" class="btn btn-primary px-4 py-2">
                     <i class="bi bi-save me-1"></i> Guardar cambios

@@ -65,6 +65,7 @@ public function show(Task $task)
             'description' => 'nullable|string',
             'priority' => 'required|in:baja,media,alta',
             'due_date' => 'nullable|date',
+            'google_drive_url' => ['nullable', 'url', 'max:2048'],
         ]);
 
         Task::create($validated);
@@ -86,6 +87,7 @@ public function show(Task $task)
             'priority' => 'required|in:baja,media,alta',
             'status' => 'required|in:pendiente,completada',
             'due_date' => 'nullable|date',
+            'google_drive_url' => ['nullable', 'url', 'max:2048'],
         ]);
 
         $task->update($validated);

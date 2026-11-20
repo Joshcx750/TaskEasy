@@ -11,6 +11,7 @@ class Task extends Model
         'priority',
         'status',
         'due_date',
+        'google_drive_url',
     ];
 
     protected function casts(): array
